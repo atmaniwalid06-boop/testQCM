@@ -17,7 +17,7 @@ async function initCamera() {
     }
 }
 
-// Analyser l'image avec GPT-4o
+// Analyser l'image avec gpt-5-mini
 async function analyzeImage(base64Image) {
     resultOverlay.style.display = "block";
     resultOverlay.style.color = "#f1c40f"; // Jaune pendant le chargement
@@ -31,7 +31,7 @@ async function analyzeImage(base64Image) {
                 'Authorization': `Bearer ${API_KEY}`
             },
             body: JSON.stringify({
-                model: "gpt-4o",
+                model: "gpt-5-mini",
                 messages: [
                     {
                         role: "user",
@@ -86,3 +86,4 @@ captureBtn.addEventListener('click', () => {
 // Lancer la caméra au chargement
 
 initCamera();
+
