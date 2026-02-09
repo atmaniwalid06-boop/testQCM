@@ -1,4 +1,4 @@
-const API_KEY = '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'; // <--- Mets ta clé ici
+const API_KEY = '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'; // <--- Mets ta clé ici
 
 const video = document.getElementById('video');
 const captureBtn = document.getElementById('capture-btn');
@@ -84,4 +84,5 @@ captureBtn.addEventListener('click', () => {
 });
 
 // Lancer la caméra au chargement
+
 initCamera();
